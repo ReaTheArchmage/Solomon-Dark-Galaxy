@@ -1,17 +1,19 @@
 [gd_scene format=3 uid="uid://xcqa8ve8fwmx"]
 
 [ext_resource type="Script" uid="uid://dvk0jfq2rbgwl" path="res://assets/scripts/player_character.gd" id="1_f6uok"]
-[ext_resource type="Resource" uid="uid://okd0o430bwbk" path="res://assets/resources/resoruces/PlayerData.tres" id="2_v0djv"]
+[ext_resource type="Resource" uid="uid://b4vqv8hxwfmkg" path="res://assets/resources/resoruces/player_data.tres" id="2_gy3rb"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3ounf"]
+radius = 0.225
 
 [node name="PlayerCharacter" type="CharacterBody3D" unique_id=1081747738]
 script = ExtResource("1_f6uok")
-p_data = ExtResource("2_v0djv")
+data = ExtResource("2_gy3rb")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=41027024]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0279794, 0)
 shape = SubResource("CapsuleShape3D_3ounf")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1447303744]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6076324, -0.28150535)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7734852, 0)
+current = true

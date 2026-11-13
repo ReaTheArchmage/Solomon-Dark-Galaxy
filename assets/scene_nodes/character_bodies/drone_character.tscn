@@ -1,11 +1,7 @@
 [gd_scene format=3 uid="uid://d12t6k8cb224w"]
 
 [ext_resource type="Script" uid="uid://dlh3i4c5dpcba" path="res://assets/scripts/drone_character.gd" id="1_2oixf"]
-[ext_resource type="Script" uid="uid://uw2rakvn124s" path="res://assets/resources/scripts/player_data.gd" id="2_2oixf"]
-
-[sub_resource type="Resource" id="Resource_mm14n"]
-script = ExtResource("2_2oixf")
-metadata/_custom_type_script = "uid://uw2rakvn124s"
+[ext_resource type="Resource" uid="uid://durnv8pu8hshg" path="res://assets/resources/resoruces/drone_data.tres" id="2_pr5td"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_3ounf"]
 radius = 0.2
@@ -13,7 +9,7 @@ radius = 0.2
 [node name="DroneCharacter" type="CharacterBody3D" unique_id=1659730053]
 motion_mode = 1
 script = ExtResource("1_2oixf")
-p_data = SubResource("Resource_mm14n")
+data = ExtResource("2_pr5td")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=123596938]
 shape = SubResource("SphereShape3D_3ounf")

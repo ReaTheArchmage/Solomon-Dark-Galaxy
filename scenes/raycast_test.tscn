@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://y0mdq7dv40tn"]
+
+[ext_resource type="Texture2D" uid="uid://brlnm7bivkpoi" path="res://assets/sky/testGrid.jpeg" id="1_qxke1"]
+[ext_resource type="PackedScene" uid="uid://k1qu6j1aeubi" path="res://assets/scene_nodes/test_props/test_ground.tscn" id="2_rgepg"]
+[ext_resource type="PackedScene" uid="uid://dyk1ooxt0iwm0" path="res://assets/scene_nodes/test_props/asteroid_field_test.tscn" id="3_j3lug"]
+[ext_resource type="PackedScene" uid="uid://xcqa8ve8fwmx" path="res://assets/scene_nodes/character_bodies/player_character.tscn" id="4_fpj03"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_sugp2"]
+panorama = ExtResource("1_qxke1")
+
+[sub_resource type="Sky" id="Sky_3ounf"]
+sky_material = SubResource("PanoramaSkyMaterial_sugp2")
+
+[sub_resource type="Environment" id="Environment_jyhfs"]
+background_mode = 2
+sky = SubResource("Sky_3ounf")
+
+[sub_resource type="GDScript" id="GDScript_jyhfs"]
+script/source = "extends Node3D
+
+"
+
+[node name="Main" type="Node3D" unique_id=819268748]
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=843058335]
+transform = Transform3D(0.99999994, 0, 0, 0, -0.44307116, -0.8964864, 0, 0.89648646, -0.44307113, -57.650322, 0, 245.88522)
+
+[node name="Sky" type="WorldEnvironment" parent="." unique_id=1788300065]
+environment = SubResource("Environment_jyhfs")
+
+[node name="TestGround" parent="." unique_id=670716099 instance=ExtResource("2_rgepg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6097261, 0)
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1073826921]
+
+[node name="AsteroidFieldTest" parent="Node3D" unique_id=1841298923 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 56.82022, -251.47218)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest2" parent="Node3D" unique_id=997711996 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 25.368656, -249.95947)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest3" parent="Node3D" unique_id=1391323172 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 56.82022, 5.152298)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest4" parent="Node3D" unique_id=1255465218 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 25.368656, 6.6650085)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest5" parent="Node3D" unique_id=1417010904 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 56.82022, 323.44788)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest6" parent="Node3D" unique_id=482096435 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 25.368656, 324.96057)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest7" parent="Node3D" unique_id=697962304 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 122.87523, -251.47218)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest8" parent="Node3D" unique_id=1472872470 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 91.42366, -249.95947)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest9" parent="Node3D" unique_id=899075497 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 122.87523, 5.152298)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest10" parent="Node3D" unique_id=574860311 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 91.42366, 6.6650085)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest11" parent="Node3D" unique_id=858932638 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 122.87523, 323.44788)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest12" parent="Node3D" unique_id=1639801843 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 91.42366, 324.96057)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest13" parent="Node3D" unique_id=1876259080 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 177.87523, -251.47218)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest14" parent="Node3D" unique_id=749144967 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 146.42366, -249.95947)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest15" parent="Node3D" unique_id=544504459 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 177.87523, 5.152298)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest16" parent="Node3D" unique_id=1367651787 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 146.42366, 6.6650085)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest17" parent="Node3D" unique_id=1754149833 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 177.87523, 323.44788)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest18" parent="Node3D" unique_id=1995784481 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 146.42366, 324.96057)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest19" parent="Node3D" unique_id=1891391207 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 236.35707, -251.47218)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest20" parent="Node3D" unique_id=357424399 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 204.9055, -249.95947)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest21" parent="Node3D" unique_id=1142807616 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 236.35707, 5.152298)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest22" parent="Node3D" unique_id=785383498 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 204.9055, 6.6650085)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest23" parent="Node3D" unique_id=1939701644 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 236.35707, 323.44788)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest24" parent="Node3D" unique_id=451574913 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 204.9055, 324.96057)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest25" parent="Node3D" unique_id=1642956591 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 297.15863, -251.47218)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest26" parent="Node3D" unique_id=1353212728 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 265.7071, -249.95947)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest27" parent="Node3D" unique_id=75076926 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 297.15863, 5.152298)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest28" parent="Node3D" unique_id=1572667754 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 265.7071, 6.6650085)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest29" parent="Node3D" unique_id=1236470147 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7402191, 297.15863, 323.44788)
+script = SubResource("GDScript_jyhfs")
+
+[node name="AsteroidFieldTest30" parent="Node3D" unique_id=1366443938 instance=ExtResource("3_j3lug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.973755, 265.7071, 324.96057)
+script = SubResource("GDScript_jyhfs")
+
+[node name="PlayerCharacter" parent="." unique_id=1081747738 instance=ExtResource("4_fpj03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.755, 0)
