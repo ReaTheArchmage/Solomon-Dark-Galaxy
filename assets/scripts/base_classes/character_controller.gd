@@ -1,8 +1,7 @@
 @abstract class_name CharacterController extends CharacterBody3D
-
 @abstract func move_character(acceleration: float)
-@export var data: CharacterData
 
+@export var data: CharacterData
 var mouse_delta: Vector2
 
 func _init() -> void:

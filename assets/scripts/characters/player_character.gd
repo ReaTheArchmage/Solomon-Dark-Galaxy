@@ -8,6 +8,7 @@ var can_fly: bool = true
 var speed_multiplier: float = 1.0
 var delta: float = 0.0
 
+
 func _physics_process(_delta: float) -> void:
 	delta = _delta
 
@@ -45,6 +46,7 @@ func jump_player():
 	else:
 		jump_timer = 0.0
 
+
 func jump_cooldown(duration: float):
 	can_fly = false
 	await get_tree().create_timer(duration).timeout
@@ -69,16 +71,3 @@ func sprint_cooldown(duration: float):
 	await get_tree().create_timer(duration).timeout
 	print("ok")
 	can_sprint = true
-
-
-func _ready() -> void:
-	var x = DamageData.new()
-	x.base_damage = 10
-	x.critical_chance = 0.7
-	x.critical_damage = 2.2
-	x.active_status_effects.assign({1:0.3})
-	x.final_multiplier = 1.1
-
-	for i in 10:
-		var y = x.damage_instance_constructor()
-		print(y.damage_value, "  :  ", y.critical_flag, "  :  ", y.status_flag, "  :  ", y.status_to_apply)
