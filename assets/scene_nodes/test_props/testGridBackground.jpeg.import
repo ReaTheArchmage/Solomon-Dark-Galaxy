@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brlnm7bivkpoi"
-path.s3tc="res://.godot/imported/testGrid.jpeg-72e1fcf703e7e53b34953ee13e897741.s3tc.ctex"
+path.s3tc="res://.godot/imported/testGridBackground.jpeg-ac5ee2205e3abf1be84795b2056f138f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/sky/testGrid.jpeg"
-dest_files=["res://.godot/imported/testGrid.jpeg-72e1fcf703e7e53b34953ee13e897741.s3tc.ctex"]
+source_file="res://assets/scene_nodes/test_props/testGridBackground.jpeg"
+dest_files=["res://.godot/imported/testGridBackground.jpeg-ac5ee2205e3abf1be84795b2056f138f.s3tc.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://hjakiywlnsp2"]
 
-[ext_resource type="Texture2D" uid="uid://brlnm7bivkpoi" path="res://assets/sky/testGrid.jpeg" id="1_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://brlnm7bivkpoi" path="res://assets/scene_nodes/test_props/testGridBackground.jpeg" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://k1qu6j1aeubi" path="res://assets/scene_nodes/test_props/test_ground.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dyk1ooxt0iwm0" path="res://assets/scene_nodes/test_props/asteroid_field_test.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://xcqa8ve8fwmx" path="res://assets/scene_nodes/character_bodies/player_character.tscn" id="4_jyhfs"]

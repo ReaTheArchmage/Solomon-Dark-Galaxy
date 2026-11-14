@@ -12,7 +12,8 @@ func _physics_process(_delta: float) -> void:
 func move_character(acceleration = 1.0):
 	var input_dir := Input.get_vector(
 		"ship_left", "ship_right", "ship_forward", "ship_backward")
-	var i_thrust_dir := Input.get_axis("ship_thrusters_down", "ship_thrusters_up")
+	var i_thrust_dir := Input.get_axis(
+		"ship_thrusters_down", "ship_thrusters_up")
 
 	var tmp_dir:= Vector3(input_dir.x, i_thrust_dir, input_dir.y)
 	var direction := (transform.basis * tmp_dir).normalized()

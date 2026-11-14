@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dni5e2l1ee251"]
 
-[ext_resource type="Script" uid="uid://cm2g3in6agyhe" path="res://assets/scripts/spaceship_character.gd" id="1_00jku"]
+[ext_resource type="Script" uid="uid://cm2g3in6agyhe" path="res://assets/scripts/characters/spaceship_character.gd" id="1_00jku"]
 [ext_resource type="Script" uid="uid://uw2rakvn124s" path="res://assets/resources/scripts/vehicle_data.gd" id="2_bbmok"]
 
 [sub_resource type="Resource" id="Resource_an3i0"]

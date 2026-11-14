@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="DamageData" format=3 uid="uid://d3exhcblb154a"]
+
+[ext_resource type="Script" uid="uid://m6vapgpgmaob" path="res://assets/resources/scripts/damage_data.gd" id="1_aj70w"]
+
+[resource]
+script = ExtResource("1_aj70w")
+final_multiplier = 8.9
+metadata/_custom_type_script = "uid://m6vapgpgmaob"

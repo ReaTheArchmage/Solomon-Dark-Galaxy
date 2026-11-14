@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d12t6k8cb224w"]
 
-[ext_resource type="Script" uid="uid://dlh3i4c5dpcba" path="res://assets/scripts/drone_character.gd" id="1_2oixf"]
-[ext_resource type="Resource" uid="uid://durnv8pu8hshg" path="res://assets/resources/resoruces/drone_data.tres" id="2_pr5td"]
+[ext_resource type="Script" uid="uid://dlh3i4c5dpcba" path="res://assets/scripts/characters/drone_character.gd" id="1_2oixf"]
+[ext_resource type="Resource" uid="uid://durnv8pu8hshg" path="res://assets/resources/resoruces/data/drone_data.tres" id="2_pr5td"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_3ounf"]
 radius = 0.2
