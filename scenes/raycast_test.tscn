@@ -3,8 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://brlnm7bivkpoi" path="res://assets/sky/testGrid.jpeg" id="1_qxke1"]
 [ext_resource type="PackedScene" uid="uid://k1qu6j1aeubi" path="res://assets/scene_nodes/test_props/test_ground.tscn" id="2_rgepg"]
 [ext_resource type="PackedScene" uid="uid://ch7acuxosvl0y" path="res://assets/scene_nodes/test_props/big_asteroid_field_test.tscn" id="3_qxke1"]
-[ext_resource type="PackedScene" uid="uid://dni5e2l1ee251" path="res://assets/scene_nodes/character_bodies/spaceship_character.tscn" id="4_qxke1"]
-[ext_resource type="Script" uid="uid://uw2rakvn124s" path="res://assets/resources/scripts/vehicle_data.gd" id="5_rgepg"]
+[ext_resource type="PackedScene" uid="uid://xcqa8ve8fwmx" path="res://assets/scene_nodes/character_bodies/player_character.tscn" id="4_qxke1"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_sugp2"]
 panorama = ExtResource("1_qxke1")
@@ -15,11 +14,6 @@ sky_material = SubResource("PanoramaSkyMaterial_sugp2")
 [sub_resource type="Environment" id="Environment_jyhfs"]
 background_mode = 2
 sky = SubResource("Sky_3ounf")
-
-[sub_resource type="Resource" id="Resource_qxke1"]
-script = ExtResource("5_rgepg")
-inertia = 0.01
-metadata/_custom_type_script = "uid://uw2rakvn124s"
 
 [node name="Main" type="Node3D" unique_id=819268748]
 
@@ -34,6 +28,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6097261, 0)
 
 [node name="BigAsteroidFieldTest" parent="." unique_id=655622012 instance=ExtResource("3_qxke1")]
 
-[node name="SpaceshipCharacter" parent="." unique_id=1659730053 instance=ExtResource("4_qxke1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.498997, -1.109726, 0.25204468)
-data = SubResource("Resource_qxke1")
+[node name="PlayerCharacter" parent="." unique_id=1081747738 instance=ExtResource("4_qxke1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4731998, -1.1097221, 5.3656616)

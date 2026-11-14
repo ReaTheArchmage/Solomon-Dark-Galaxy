@@ -1,7 +1,8 @@
-@abstract class_name VehicleController extends CharacterBody3D
-@abstract func move_vehicle(acceleration: float = 1.0)
+@abstract class_name CharacterController extends CharacterBody3D
 
-@export var data: VehicleData
+@abstract func move_character(acceleration: float)
+@export var data: CharacterData
+
 var mouse_delta: Vector2
 
 func _init() -> void:

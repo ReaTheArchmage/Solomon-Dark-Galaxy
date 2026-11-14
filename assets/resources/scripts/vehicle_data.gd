@@ -1,4 +1,4 @@
-class_name VehicleData extends Resource
+class_name VehicleData extends CharacterData
 
 @export var max_acceleration: float = 5.0
 @export var max_accel_bonus: float = 6.0

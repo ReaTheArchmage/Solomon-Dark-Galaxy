@@ -1,22 +1,15 @@
-extends CharacterBody3D
+class_name PlayerCharacter extends CharacterController
 
-@export var data: PlayerData
 var jump_timer: float = 0.0
 var delta: float = 0.0
 var can_fly: bool = true
-
-func _init() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _physics_process(_delta: float) -> void:
 	delta = _delta
 	add_gravity()
 	jump_player()
-	move_player()
+	move_character()
 	move_and_slide()
-
-func _unhandled_input(event: InputEvent) -> void:
-	mouse_rotate_view(event)
 
 
 func add_gravity():
@@ -41,7 +34,7 @@ func fly_cooldown(duration: float):
 	can_fly = true
 
 
-func move_player():
+func move_character(_acceleration = 1.0):
 	var input_dir := Input.get_vector("ship_left", "ship_right", "ship_forward", "ship_backward")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
@@ -50,11 +43,3 @@ func move_player():
 	else:
 		velocity.x = move_toward(velocity.x, 0, data.speed)
 		velocity.z = move_toward(velocity.z, 0, data.speed)
-var mouse_delta: Vector2
-
-
-func mouse_rotate_view(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		mouse_delta = event.relative
-		global_rotation.y -= mouse_delta.x * data.mouse_sensitivity
-		global_rotation.x -= mouse_delta.y * data.mouse_sensitivity

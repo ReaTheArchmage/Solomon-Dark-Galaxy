@@ -1,4 +1,4 @@
-class_name PlayerData extends Resource
+class_name PlayerData extends CharacterData
 
 @export var speed = 5.0
 @export var jump_velocity = 4.5
